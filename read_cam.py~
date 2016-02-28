@@ -6,7 +6,7 @@ import urllib
 import numpy as np
 
 DB_IP='52.27.134.146'
-CAM_URL='http://10.8.0.4:8080/?action=stream'
+CAM_URL='http://camera.local:8080/?action=stream'
 
 db_client=MongoClient(DB_IP, 27017)
 db=db_client.power_stats
