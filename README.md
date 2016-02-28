@@ -1,7 +1,7 @@
 # Analog-Utility-Meter-Reader
 An OpenCV implementation of an Analog Utility Meter Reader. Image processing code written in Python, server-side visualization implemented using Node JS and MongoDB.
 
-The project is divided into three separate modules, each of which are designed to communicate with over LAN and/or WAN connections. 
+The project is divided into three separate modules, each of which are designed to communicate over LAN and/or WAN connections. 
 
 Topology
 ===========
