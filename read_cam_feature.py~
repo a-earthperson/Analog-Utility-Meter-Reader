@@ -1,6 +1,7 @@
 import cv2
 import cv2.cv
 from pymongo import MongoClient
+import matplotlib.pyplot as plt
 import time
 import datetime
 import urllib 
@@ -24,7 +25,16 @@ while True:
         bytes= bytes[b+2:]
         img = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),cv2.CV_LOAD_IMAGE_COLOR)
         cv2.imshow('RAW',img)
-        
+        src_img =  cv2.imread('meter.jpg',0)          # queryImage
+        # Initiate STAR detector
+#        orb = cv2.ORB()
+#        kp = orb.detect(img,None)
+        # compute the descriptors with ORB
+#        kp, des = orb.compute(img, kp)
+        # draw only keypoints location,not size and orientation
+#        img = cv2.drawKeypoints(img,kp,color=(0,255,0), flags=0)
+        #cv2.imshow('features',img2)
+
         # Find circles of known radius and draw them
         gray = (cv2.cvtColor(img,cv2.COLOR_BGR2GRAY))
 #        equalized_gray = cv2.equalizeHist(gray)
